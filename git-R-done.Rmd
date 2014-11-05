@@ -1,29 +1,27 @@
-git-R-done 
-========================================================
-#### using R, git and github to further reproducible and open science
+---
+title: "git-R-done"
+author: Josh M. London, Devin S. Johnson
+date: November 6 2014
+output: ioslides_presentation
+---
 
-## Josh M. London, Devin J. Johnson
+git-R-done | using R, git and github to further reproducible science
+====================================================================
 
-AFSC National Marine Mammal Laboratory
-
-#### 6 November 2014
-
-Today, you are NOT going to learn ...
-========================================================
+## Today, you are NOT going to learn ...**
 
 - R
 - git
 - github
 
-Today, you ARE going to learn ...
-========================================================
+## Today, you ARE going to learn ...**
 
 - about reproducible research in R
 - how you might incorporate git into your scientific workflow
 - how github enhances the transparency and openess of your science
 
 Learn to Tell a Story ... From the Beginning
-========================================================
+---------------------------------------------
 
 1. Research Planning/Desing
 2. Data Collection
@@ -35,17 +33,19 @@ Learn to Tell a Story ... From the Beginning
 Version Control
 ========================================================
 
-> Many of you already use a version control system without realizing it
+## Many of you already use a version control system without realizing it
 
 - file/folder naming conventions
-  (e.g. _myanalysis.R_, _myanalysis-1.R_, _myanalysis-20141103.R_, _myanalysis-20141103-JML.R_)
+    * _myanalysis.R_
+    * _myanalysis-1.R_
+    * _myanalysis-20141103.R_
+    * _myanalysis-20141103-JML.R_
 
 - Google drive apps (docs, spreadsheet, presentations)
 
-- MS Word Track Changes
+- MS Word Track Changes (ugh)
 
-Git Allows You to Tell a Story While Exploring
-========================================================
+## Git Allows You to Tell a Story While Exploring
 
 - branches = parallel dimensions
 
@@ -54,8 +54,7 @@ Git Allows You to Tell a Story While Exploring
 Git Demonstration
 =======================================================
 
-Using Git with R
-=======================================================
+## Using Git with R
 
 > Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to
 
