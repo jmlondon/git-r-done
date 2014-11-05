@@ -1,27 +1,26 @@
 ---
 title: "git-R-done"
-author: Josh M. London, Devin S. Johnson
-date: November 6 2014
+author: "Josh M. London and Devin S. Johnson"
+date: "November 6, 2014"
 output: ioslides_presentation
 ---
 
-git-R-done | using R, git and github to further reproducible science
+git-R-done | Using R, git and github to further reproducible science
 ====================================================================
 
-## Today, you are NOT going to learn ...**
+## Today, you are NOT going to learn ... 
 
 - R
 - git
 - github
 
-## Today, you ARE going to learn ...**
+## Today, you ARE going to learn ...
 
-- about reproducible research in R
-- how you might incorporate git into your scientific workflow
-- how github enhances the transparency and openess of your science
+- About reproducible research in R
+- How you might incorporate git into your scientific workflow
+- How github enhances the transparency and openess of your science
 
-Learn to Tell a Story ... From the Beginning
----------------------------------------------
+## Learn to Tell a Story ... From the Beginning
 
 1. Research Planning/Desing
 2. Data Collection
@@ -36,14 +35,15 @@ Version Control
 ## Many of you already use a version control system without realizing it
 
 - file/folder naming conventions
-    * _myanalysis.R_
-    * _myanalysis-1.R_
-    * _myanalysis-20141103.R_
-    * _myanalysis-20141103-JML.R_
+    * _myanalysis.R
+    * _myanalysis-1.R
+    * _myanalysis-20141103.R
+    * _myanalysis-20141103-JML.R
 
 - Google drive apps (docs, spreadsheet, presentations)
 
 - MS Word Track Changes (ugh)
+
 
 ## Git Allows You to Tell a Story While Exploring
 
@@ -51,21 +51,22 @@ Version Control
 
 - commits = punchlines
 
+
 Git Demonstration
 =======================================================
 
+
 ## Using Git with R
 
-> Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to
+Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to
 
 - start with a single user and a single branch
 - commit often and tell a story
 - tags to mark milestones
 
-Using Git with R
-=======================================================
+## Using Git with R
 
-> As you get comfortable, branch out
+As you get comfortable, branch out
 
 - create a _develop_ branch
 - _master_ branch always works
@@ -74,57 +75,43 @@ Using Git with R
 Using Git with RStudio
 =======================================================
 
-Resources for Learning Git
-=======================================================
+## Resources for Learning Git
+
 
 Collaborating with Git
-=======================================================
+======================================================
 
-Git Servers
-=======================================================
+## Git Servers
 
-Pushing and Pulling
-=======================================================
+## Pushing and Pulling
 
-Git Doesn't Replace Communication
-=======================================================
+## Git Doesn't Replace Communication
 
-GitHub
-=======================================================
+## GitHub
 
-GitHub and the Federal Government
-=======================================================
+## GitHub and the Federal Government
 
-Github at NOAA/NMFS ... or not?
-=======================================================
+## Github at NOAA/NMFS ... or not?
 
-Fundamental Research Communication
-=======================================================
+## Fundamental Research Communication
 
-Scientific Integrity Policy
-=======================================================
+## Scientific Integrity Policy
 
-Value GitHub as a Component in the Scientific Process
-=======================================================
+## Value GitHub as a Component in the Scientific Process
 
-Be Professional, Be Smart, Be Secure
-=======================================================
+## Be Professional, Be Smart, Be Secure
 
-GitHub and the Publication Process
-=======================================================
+## GitHub and the Publication Process
 
 - GitHub is for hosting code and analysis
 - Not a data archive (e.g. NODC, NGDC, Dryan, Figshare)
 - Mozilla Science Lab/Figshare/GitHub for Minting DOI's
 
-You Will Not Learn Git Overnight
-=======================================================
+## You Will Not Learn Git Overnight
 
-Jump In with Both Feet
-=======================================================
+## Jump In with Both Feet
 
-Make Mistakes
-=======================================================
+## Make Mistakes
 
-Development Demonstration - Devin Johnson
+Development Demonstration
 =======================================================
