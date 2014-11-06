@@ -8,21 +8,25 @@ output: ioslides_presentation
 git-R-done | Using R, git and github to further reproducible science
 ====================================================================
 
-## Today, you are NOT going to learn ... 
+## Today
+
+you are **NOT** going to learn ... 
 
 - R
 - git
-- github
+- bayesian hierachical modeling
 
-## Today, you ARE going to learn ...
+you **ARE** going to learn ...
 
-- About reproducible research in R
+- About git and version control
+- How you can learn git on your own
 - How you might incorporate git into your scientific workflow
-- How github enhances the transparency and openess of your science
+- AFSC gitlab as a resource
+- How GitHub can help you share your work
 
 ## Learn to Tell a Story ... From the Beginning
 
-1. Research Planning/Desing
+1. Research Planning/Design
 2. Data Collection
 3. Data Management and Munging
 4. Data Analysis
@@ -35,10 +39,10 @@ Version Control
 ## Many of you already use a version control system without realizing it
 
 - file/folder naming conventions
-    * _myanalysis.R
-    * _myanalysis-1.R
-    * _myanalysis-20141103.R
-    * _myanalysis-20141103-JML.R
+    * _myanalysis.R_
+    * _myanalysis-1.R_
+    * _myanalysis-20141103.R_
+    * _myanalysis-20141103-JML.R_
 
 - Google drive apps (docs, spreadsheet, presentations)
 
@@ -48,29 +52,32 @@ Version Control
 ## Git Allows You to Tell a Story While Exploring
 
 - branches = parallel dimensions
-    * typical approach is to have a *develop* and *master* branch
-    * other options include feature branches, bug-fix branches
-    * no cost to creating a branch, easily 'pruned'
+
+    - typical approach is to have a *develop* and *master* branch
+    - other options include feature branches, bug-fix branches
+    - no cost to creating a branch, easily 'pruned'
 
 - commits = punchlines
-    * commit often
-    * brief and descriptive
+
+    - commit often
+    - brief and descriptive
 
 ## Writing and Structuring a Commit Message
 
-**GOOD EXAMPLE**
+**the good**
 
-CREATED THE convertDD() FUNCTION
+    CREATED THE convertDD() FUNCTION
 
-latitude and longitude data were provided in DMS,
-so created this function to convert values to decimal degrees
+    latitude and longitude data were provided in DMS,
+    so created this function to convert values to decimal degrees
 
-**BAD EXAMPLE**
 
-DID SOME MISC STUFF TO THE CODE
+**the bad**
 
-i forgot to commit for the last two weeks, not sure what I
-did so just typing blah blah blah
+    DID SOME MISC STUFF TO THE CODE
+
+    i forgot to commit for the last two weeks, not sure what I
+    did so just typing blah blah blah
 
 Git Demonstration
 =======================================================
@@ -91,13 +98,13 @@ Git Demonstration
 
 ## Using Git with R and Science
 
-Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to
+Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to. Find a solution and workflow that works for you. Learn from others
 
 - start with a single user and a single branch
 - commit often and tell a story
 - tags to mark milestones
 
-- learn git by using it with a meaningful project
+advice: learn git by using it with a **meaningful** project
 
 ## Using Git with R and Science
 
@@ -134,40 +141,158 @@ AFSC GitLab
 
 ## Communicate with Collaborators
 
+like living in a house with your college roommates
+
+* don't be messy
+* do your share of the chores/cleaning
+* house meetings
+
+git collaboration keys
+
 * develop a collaboration plan early on
-* git is not a replacement for talking
+* organize files/directories, naming schemes
 * git in the habit of pushing/pulling
-* don't be afraid to merge
+* don't be afraid to merge and resolve conflicts
 
 ## Pushing and Pulling
 
-## Git Doesn't Replace Communication
+Push
+
+- push commits from local to server
+- auto-merge, if no merge conflicts
+
+
+
+Pull
+
+- pull changes from server to local
+- auto-merge, if no merge conflicts
+
+
+
+## Merge Conflicts
+
+master (HEAD)
+
+    two plus two equals five
+
+branch-a
+    
+    two plus two equals four
+
+conflict
+
+    two plus two equals
+    <<<<<<< HEAD
+    five
+    =======
+    four
+    >>>>>>> branch-a
+
+## Merge Conflicts
+
+edit the file to reflect desired version
+
+    two plus two equals four, or five, depending on who you ask
+
+add the file and commit
+
+    git add simplemath.txt
+    git commit -m "Merged branch-a, fixed conflict."
 
 ## GitHub
 
+* GitHub has become the predominant site for providing a web interface to git and a large community of developers
+* Accounts are free and an unlimited number of public repositories
+* Originally focussed on open source code, but has evolved and extended to a broad range of uses
+* Significant presence of R developers
+* Host R packages on GitHub, install with devtools package
+* Allows easy collaboration with non-NOAA colleagues
+* Archive code with Figshare and mint a DOI (citable)
+
 ## GitHub and the Federal Government
+
+* Several federal agencies use github and have an active user base
+  - USGS, The White House, FDA, NASA, FAA, FCC, USFWS, HHS, ...
+* GitHub has a GSA approved Terms of Service for Government users
+* Approved (as social media) by Department of Commerce
+
+Project Open Data
+
+* The White House is using github to develop and distribute policy, information and tools related to open data and access to information and research results.
 
 ## Github at NOAA/NMFS ... or not?
 
-## Fundamental Research Communication
+NOAA and NMFS have **NO POLICY** regarding the use (or non-use) of GitHub
 
-## Scientific Integrity Policy
+* general statements about storing official information
+* concerns about releasing sensitive data, info, etc
+* most in a position to set policy are ignorant of github and software development
 
-## Value GitHub as a Component in the Scientific Process
+Use of GitHub by NOAA/NMFS scientists for sharing scientific analysis and code can be classified as a _Fundamental Research Communication_ and is consistent with the _Scientific Integrity Policy_
 
-## Be Professional, Be Smart, Be Secure
+Discuss with your supervisor and make sure use of GitHub is consistent with mission and objectives.
+
+## Transparency Contributes to Integrity
+
+NOAA Scientific Integrity Policy
+
+    NOAA scientists are encouraged to publish data and findings in ways 
+    that contribute to the effective transparency and dissemination of NOAA 
+    science and that enhance NOAA's reputation for reliable science, 
+    **including online in open formats** and through peer-reviewed, 
+    professional, or scholarly journals... 
+
+Fundamental Research Communication
+
+    Public communication prepared as part of the employee's official 
+    work regarding the products of basic or applied research in science 
+    and engineering, the results of which ordinarily are published and 
+    shared broadly within the scientific community.
+
+## Keep the Use of GitHub in the Science Realm
+
+GitHub is **not** to be used for '_official communication_' or '_official policy_'
+
+* R packages and distribution (less restrictive than CRAN)
+* Collaboration on scientific analysis
+* Sharing analysis code with submitted manuscripts (Figshare/DOI)
+
+
+## Value GitHub as Part of the Scientific Process
+
+* Understand the benefits and responsibilities that come with sharing code
+* Similar mentality to submitting a paper, accepting reviews, and publishing
+* Currently, responsibility lies with the end-user
+* As a center we should develop a more professional process for reviewing and releasing analysis code and products to GitHub
+* An opportunity to lead within NOAA/NMFS
 
 ## GitHub and the Publication Process
 
-- GitHub is for hosting code and analysis
+- GitHub is for hosting polished code and analysis
 - Not a data archive (e.g. NODC, NGDC, Dryan, Figshare)
 - Mozilla Science Lab/Figshare/GitHub for Minting DOI's
 
-## You Will Not Learn Git Overnight
+## Be Professional, Be Smart, Be Secure
 
-## Jump In with Both Feet
+    It's ok to let folks see how the sausage is made, just
+    make sure you are washing your hands, using gloves,
+    wearing a hairnet and turning away when you sneeze.
+    
+* No sensitive data
+* No PII
+* No user accounts and passwords in code
+* Two-factor authentication for GitHub account
+* Be professional when interacting online
 
-## Make Mistakes
+You Will Not Learn Git Overnight
+================================
+
+Jump In with Both Feet
+=========================
+
+Make Mistakes
+=================
 
 Development Demonstration
 =======================================================

@@ -89,26 +89,30 @@
 
 <slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>git-R-done </h2><h3> Using R, git and github to further reproducible science</h3></hgroup><article  id="git-r-done-using-r-git-and-github-to-further-reproducible-science">
 
-</article></slide><slide class=''><hgroup><h2>Today, you are NOT going to learn &#8230;</h2></hgroup><article  id="today-you-are-not-going-to-learn-...">
+</article></slide><slide class=''><hgroup><h2>Today</h2></hgroup><article  id="today">
+
+<p>you are <strong>NOT</strong> going to learn &#8230;</p>
 
 <ul>
 <li>R</li>
 <li>git</li>
-<li>github</li>
+<li>bayesian hierachical modeling</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Today, you ARE going to learn &#8230;</h2></hgroup><article  id="today-you-are-going-to-learn-...">
+<p>you <strong>ARE</strong> going to learn &#8230;</p>
 
 <ul>
-<li>About reproducible research in R</li>
+<li>About git and version control</li>
+<li>How you can learn git on your own</li>
 <li>How you might incorporate git into your scientific workflow</li>
-<li>How github enhances the transparency and openess of your science</li>
+<li>AFSC gitlab as a resource</li>
+<li>How GitHub can help you share your work</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Learn to Tell a Story &#8230; From the Beginning</h2></hgroup><article  id="learn-to-tell-a-story-...-from-the-beginning">
 
 <ol>
-<li>Research Planning/Desing</li>
+<li>Research Planning/Design</li>
 <li>Data Collection</li>
 <li>Data Management and Munging</li>
 <li>Data Analysis</li>
@@ -124,10 +128,10 @@
 <li>file/folder naming conventions
 
 <ul>
-<li>_myanalysis.R</li>
-<li>_myanalysis-1.R</li>
-<li>_myanalysis-20141103.R</li>
-<li>_myanalysis-20141103-JML.R</li>
+<li><em>myanalysis.R</em></li>
+<li><em>myanalysis-1.R</em></li>
+<li><em>myanalysis-20141103.R</em></li>
+<li><em>myanalysis-20141103-JML.R</em></li>
 </ul></li>
 <li><p>Google drive apps (docs, spreadsheet, presentations)</p></li>
 <li><p>MS Word Track Changes (ugh)</p></li>
@@ -136,14 +140,14 @@
 </article></slide><slide class=''><hgroup><h2>Git Allows You to Tell a Story While Exploring</h2></hgroup><article  id="git-allows-you-to-tell-a-story-while-exploring">
 
 <ul>
-<li>branches = parallel dimensions
+<li><p>branches = parallel dimensions</p>
 
 <ul>
 <li>typical approach is to have a <em>develop</em> and <em>master</em> branch</li>
 <li>other options include feature branches, bug-fix branches</li>
 <li>no cost to creating a branch, easily &#39;pruned&#39;</li>
 </ul></li>
-<li>commits = punchlines
+<li><p>commits = punchlines</p>
 
 <ul>
 <li>commit often</li>
@@ -153,41 +157,21 @@
 
 </article></slide><slide class=''><hgroup><h2>Writing and Structuring a Commit Message</h2></hgroup><article  id="writing-and-structuring-a-commit-message">
 
-<p><strong>GOOD EXAMPLE</strong></p>
+<p><strong>the good</strong></p>
 
-<p>CREATED THE convertDD() FUNCTION</p>
+<pre >CREATED THE convertDD() FUNCTION
 
-<p>latitude and longitude data were provided in DMS, so created this function to convert values to decimal degrees</p>
+latitude and longitude data were provided in DMS,
+so created this function to convert values to decimal degrees</pre>
 
-<p><strong>BAD EXAMPLE</strong></p>
+<p><strong>the bad</strong></p>
 
-<p>DID SOME MISC STUFF TO THE CODE</p>
+<pre >DID SOME MISC STUFF TO THE CODE
 
-<p>i forgot to commit for the last two weeks, not sure what I did so just typing blah blah blah</p>
+i forgot to commit for the last two weeks, not sure what I
+did so just typing blah blah blah</pre>
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Git Demonstration</h2></hgroup><article  id="git-demonstration">
-
-</article></slide><slide class=''><hgroup><h2>Using Git with R</h2></hgroup><article  id="using-git-with-r">
-
-<p>Scientific analysis and R doesn&#39;t follow a typical software development cycle &#8230; so don&#39;t force it to</p>
-
-<ul>
-<li>start with a single user and a single branch</li>
-<li>commit often and tell a story</li>
-<li>tags to mark milestones</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Using Git with R</h2></hgroup><article  id="using-git-with-r-1">
-
-<p>As you get comfortable, branch out</p>
-
-<ul>
-<li>create a <em>develop</em> branch</li>
-<li><em>master</em> branch always works</li>
-<li>simple branches off <em>develop</em></li>
-</ul>
-
-</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Using Git with RStudio</h2></hgroup><article  id="using-git-with-rstudio">
 
 </article></slide><slide class=''><hgroup><h2>Resources for Learning Git</h2></hgroup><article  id="resources-for-learning-git">
 
@@ -202,6 +186,30 @@
 
 <p><a href='http://git-scm.com/book/en/v2/Getting-Started-Git-Basics' title=''>http://git-scm.com/book/en/v2/Getting-Started-Git-Basics</a></p></li>
 </ul>
+
+</article></slide><slide class=''><hgroup><h2>Using Git with R and Science</h2></hgroup><article  id="using-git-with-r-and-science">
+
+<p>Scientific analysis and R doesn&#39;t follow a typical software development cycle &#8230; so don&#39;t force it to. Find a solution and workflow that works for you. Learn from others</p>
+
+<ul>
+<li>start with a single user and a single branch</li>
+<li>commit often and tell a story</li>
+<li>tags to mark milestones</li>
+</ul>
+
+<p>advice: learn git by using it with a <strong>meaningful</strong> project</p>
+
+</article></slide><slide class=''><hgroup><h2>Using Git with R and Science</h2></hgroup><article  id="using-git-with-r-and-science-1">
+
+<p>As you get comfortable, branch out</p>
+
+<ul>
+<li>create a <em>develop</em> branch</li>
+<li><em>master</em> branch always works</li>
+<li>simple branches off <em>develop</em></li>
+</ul>
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Using Git with RStudio</h2></hgroup><article  id="using-git-with-rstudio">
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Collaborating with Git</h2></hgroup><article  id="collaborating-with-git">
 
@@ -230,37 +238,176 @@
 <li>Available from the internet (VPN not required)</li>
 </ul>
 
+</article></slide><slide class=''><hgroup><h2>Communicate with Collaborators</h2></hgroup><article  id="communicate-with-collaborators">
+
+<p>like living in a house with your college roommates</p>
+
+<ul>
+<li>don&#39;t be messy</li>
+<li>do your share of the chores/cleaning</li>
+<li>house meetings</li>
+</ul>
+
+<p>git collaboration keys</p>
+
+<ul>
+<li>develop a collaboration plan early on</li>
+<li>organize files/directories, naming schemes</li>
+<li>git in the habit of pushing/pulling</li>
+<li>don&#39;t be afraid to merge and resolve conflicts</li>
+</ul>
+
 </article></slide><slide class=''><hgroup><h2>Pushing and Pulling</h2></hgroup><article  id="pushing-and-pulling">
 
-</article></slide><slide class=''><hgroup><h2>Git Doesn&#39;t Replace Communication</h2></hgroup><article  id="git-doesnt-replace-communication">
+<p>Push</p>
+
+<ul>
+<li>push commits from local to server</li>
+<li>auto-merge, if no merge conflicts</li>
+</ul>
+
+<p>Pull</p>
+
+<ul>
+<li>pull changes from server to local</li>
+<li>auto-merge, if no merge conflicts</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Merge Conflicts</h2></hgroup><article  id="merge-conflicts">
+
+<p>master (HEAD)</p>
+
+<pre >two plus two equals five</pre>
+
+<p>branch-a</p>
+
+<pre >two plus two equals four</pre>
+
+<p>conflict</p>
+
+<pre >two plus two equals
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+five
+=======
+four
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-a</pre>
+
+</article></slide><slide class=''><hgroup><h2>Merge Conflicts</h2></hgroup><article  id="merge-conflicts-1">
+
+<p>edit the file to reflect desired version</p>
+
+<pre >two plus two equals four, or five, depending on who you ask</pre>
+
+<p>add the file and commit</p>
+
+<pre >git add simplemath.txt
+git commit -m &quot;Merged branch-a, fixed conflict.&quot;</pre>
 
 </article></slide><slide class=''><hgroup><h2>GitHub</h2></hgroup><article  id="github">
 
+<ul>
+<li>GitHub has become the predominant site for providing a web interface to git and a large community of developers</li>
+<li>Accounts are free and an unlimited number of public repositories</li>
+<li>Originally focussed on open source code, but has evolved and extended to a broad range of uses</li>
+<li>Significant presence of R developers</li>
+<li>Host R packages on GitHub, install with devtools package</li>
+<li>Allows easy collaboration with non-NOAA colleagues</li>
+<li>Archive code with Figshare and mint a DOI (citable)</li>
+</ul>
+
 </article></slide><slide class=''><hgroup><h2>GitHub and the Federal Government</h2></hgroup><article  id="github-and-the-federal-government">
+
+<ul>
+<li>Several federal agencies use github and have an active user base</li>
+<li>USGS, The White House, FDA, NASA, FAA, FCC, USFWS, HHS, &#8230;</li>
+<li>GitHub has a GSA approved Terms of Service for Government users</li>
+<li>Approved (as social media) by Department of Commerce</li>
+</ul>
+
+<p>Project Open Data</p>
+
+<ul>
+<li>The White House is using github to develop and distribute policy, information and tools related to open data and access to information and research results.</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Github at NOAA/NMFS &#8230; or not?</h2></hgroup><article  id="github-at-noaanmfs-...-or-not">
 
-</article></slide><slide class=''><hgroup><h2>Fundamental Research Communication</h2></hgroup><article  id="fundamental-research-communication">
+<p>NOAA and NMFS have <strong>NO POLICY</strong> regarding the use (or non-use) of GitHub</p>
 
-</article></slide><slide class=''><hgroup><h2>Scientific Integrity Policy</h2></hgroup><article  id="scientific-integrity-policy">
+<ul>
+<li>general statements about storing official information</li>
+<li>concerns about releasing sensitive data, info, etc</li>
+<li>most in a position to set policy are ignorant of github and software development</li>
+</ul>
 
-</article></slide><slide class=''><hgroup><h2>Value GitHub as a Component in the Scientific Process</h2></hgroup><article  id="value-github-as-a-component-in-the-scientific-process">
+<p>Use of GitHub by NOAA/NMFS scientists for sharing scientific analysis and code can be classified as a <em>Fundamental Research Communication</em> and is consistent with the <em>Scientific Integrity Policy</em></p>
 
-</article></slide><slide class=''><hgroup><h2>Be Professional, Be Smart, Be Secure</h2></hgroup><article  id="be-professional-be-smart-be-secure">
+<p>Discuss with your supervisor and make sure use of GitHub is consistent with mission and objectives.</p>
+
+</article></slide><slide class=''><hgroup><h2>Transparency Contributes to Integrity</h2></hgroup><article  id="transparency-contributes-to-integrity">
+
+<p>NOAA Scientific Integrity Policy</p>
+
+<pre >NOAA scientists are encouraged to publish data and findings in ways 
+that contribute to the effective transparency and dissemination of NOAA 
+science and that enhance NOAA&#39;s reputation for reliable science, 
+**including online in open formats** and through peer-reviewed, 
+professional, or scholarly journals... </pre>
+
+<p>Fundamental Research Communication</p>
+
+<pre >Public communication prepared as part of the employee&#39;s official 
+work regarding the products of basic or applied research in science 
+and engineering, the results of which ordinarily are published and 
+shared broadly within the scientific community.</pre>
+
+</article></slide><slide class=''><hgroup><h2>Keep the Use of GitHub in the Science Realm</h2></hgroup><article  id="keep-the-use-of-github-in-the-science-realm">
+
+<p>GitHub is <strong>not</strong> to be used for &#39;<em>official communication</em>&#39; or &#39;<em>official policy</em>&#39;</p>
+
+<ul>
+<li>R packages and distribution (less restrictive than CRAN)</li>
+<li>Collaboration on scientific analysis</li>
+<li>Sharing analysis code with submitted manuscripts (Figshare/DOI)</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Value GitHub as Part of the Scientific Process</h2></hgroup><article  id="value-github-as-part-of-the-scientific-process">
+
+<ul>
+<li>Understand the benefits and responsibilities that come with sharing code</li>
+<li>Similar mentality to submitting a paper, accepting reviews, and publishing</li>
+<li>Currently, responsibility lies with the end-user</li>
+<li>As a center we should develop a more professional process for reviewing and releasing analysis code and products to GitHub</li>
+<li>An opportunity to lead within NOAA/NMFS</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>GitHub and the Publication Process</h2></hgroup><article  id="github-and-the-publication-process">
 
 <ul>
-<li>GitHub is for hosting code and analysis</li>
+<li>GitHub is for hosting polished code and analysis</li>
 <li>Not a data archive (e.g. NODC, NGDC, Dryan, Figshare)</li>
 <li>Mozilla Science Lab/Figshare/GitHub for Minting DOI&#39;s</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>You Will Not Learn Git Overnight</h2></hgroup><article  id="you-will-not-learn-git-overnight">
+</article></slide><slide class=''><hgroup><h2>Be Professional, Be Smart, Be Secure</h2></hgroup><article  id="be-professional-be-smart-be-secure">
 
-</article></slide><slide class=''><hgroup><h2>Jump In with Both Feet</h2></hgroup><article  id="jump-in-with-both-feet">
+<pre >It&#39;s ok to let folks see how the sausage is made, just
+make sure you are washing your hands, using gloves,
+wearing a hairnet and turning away when you sneeze.</pre>
 
-</article></slide><slide class=''><hgroup><h2>Make Mistakes</h2></hgroup><article  id="make-mistakes">
+<ul>
+<li>No sensitive data</li>
+<li>No PII</li>
+<li>No user accounts and passwords in code</li>
+<li>Two-factor authentication for GitHub account</li>
+<li>Be professional when interacting online</li>
+</ul>
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>You Will Not Learn Git Overnight</h2></hgroup><article  id="you-will-not-learn-git-overnight">
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Jump In with Both Feet</h2></hgroup><article  id="jump-in-with-both-feet">
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Make Mistakes</h2></hgroup><article  id="make-mistakes">
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Development Demonstration</h2></hgroup><article  id="development-demonstration"></article></slide>
 
