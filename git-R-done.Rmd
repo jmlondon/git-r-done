@@ -48,15 +48,48 @@ Version Control
 ## Git Allows You to Tell a Story While Exploring
 
 - branches = parallel dimensions
+    * typical approach is to have a *develop* and *master* branch
+    * other options include feature branches, bug-fix branches
+    * no cost to creating a branch, easily 'pruned'
 
 - commits = punchlines
+    * commit often
+    * brief and descriptive
 
+## Writing and Structuring a Commit Message
+
+**GOOD EXAMPLE**
+
+CREATED THE convertDD() FUNCTION
+
+latitude and longitude data were provided in DMS,
+so created this function to convert values to decimal degrees
+
+**BAD EXAMPLE**
+
+DID SOME MISC STUFF TO THE CODE
+
+i forgot to commit for the last two weeks, not sure what I
+did so just typing blah blah blah
 
 Git Demonstration
 =======================================================
 
+## Resources for Learning Git
 
-## Using Git with R
+- Getting Git Right
+
+    https://www.atlassian.com/git/
+    
+- Learn Version Control with Git
+
+    http://www.git-tower.com/learn/
+    
+- Getting Started - Git Basics
+
+    http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+## Using Git with R and Science
 
 Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to
 
@@ -64,7 +97,9 @@ Scientific analysis and R doesn't follow a typical software development cycle ..
 - commit often and tell a story
 - tags to mark milestones
 
-## Using Git with R
+- learn git by using it with a meaningful project
+
+## Using Git with R and Science
 
 As you get comfortable, branch out
 
@@ -75,13 +110,34 @@ As you get comfortable, branch out
 Using Git with RStudio
 =======================================================
 
-## Resources for Learning Git
-
-
 Collaborating with Git
 ======================================================
 
 ## Git Servers
+
+There are two options available
+
+* gitlab.afsc.noaa.gov
+* github.com
+
+AFSC GitLab
+
+* Web:   https://gitlab.afsc.noaa.gov  / https://161.55.120.151
+* Git+ssh:   ssh://git@gitlab.afsc.noaa.gov:2222/&lt;username&gt;/&lt;project&gt;.git
+
+## AFSC GitLab
+
+* LDAP user accounts and authentication (NOAA only)
+* Unlimited private or internal repositories
+* Public repositories are also an option
+* Available from the internet (VPN not required)
+
+## Communicate with Collaborators
+
+* develop a collaboration plan early on
+* git is not a replacement for talking
+* git in the habit of pushing/pulling
+* don't be afraid to merge
 
 ## Pushing and Pulling
 

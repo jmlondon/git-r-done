@@ -136,9 +136,34 @@
 </article></slide><slide class=''><hgroup><h2>Git Allows You to Tell a Story While Exploring</h2></hgroup><article  id="git-allows-you-to-tell-a-story-while-exploring">
 
 <ul>
-<li><p>branches = parallel dimensions</p></li>
-<li><p>commits = punchlines</p></li>
+<li>branches = parallel dimensions
+
+<ul>
+<li>typical approach is to have a <em>develop</em> and <em>master</em> branch</li>
+<li>other options include feature branches, bug-fix branches</li>
+<li>no cost to creating a branch, easily &#39;pruned&#39;</li>
+</ul></li>
+<li>commits = punchlines
+
+<ul>
+<li>commit often</li>
+<li>brief and descriptive</li>
+</ul></li>
 </ul>
+
+</article></slide><slide class=''><hgroup><h2>Writing and Structuring a Commit Message</h2></hgroup><article  id="writing-and-structuring-a-commit-message">
+
+<p><strong>GOOD EXAMPLE</strong></p>
+
+<p>CREATED THE convertDD() FUNCTION</p>
+
+<p>latitude and longitude data were provided in DMS, so created this function to convert values to decimal degrees</p>
+
+<p><strong>BAD EXAMPLE</strong></p>
+
+<p>DID SOME MISC STUFF TO THE CODE</p>
+
+<p>i forgot to commit for the last two weeks, not sure what I did so just typing blah blah blah</p>
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Git Demonstration</h2></hgroup><article  id="git-demonstration">
 
@@ -166,9 +191,44 @@
 
 </article></slide><slide class=''><hgroup><h2>Resources for Learning Git</h2></hgroup><article  id="resources-for-learning-git">
 
+<ul>
+<li><p>Getting Git Right</p>
+
+<p><a href='https://www.atlassian.com/git/' title=''>https://www.atlassian.com/git/</a></p></li>
+<li><p>Learn Version Control with Git</p>
+
+<p><a href='http://www.git-tower.com/learn/' title=''>http://www.git-tower.com/learn/</a></p></li>
+<li><p>Getting Started - Git Basics</p>
+
+<p><a href='http://git-scm.com/book/en/v2/Getting-Started-Git-Basics' title=''>http://git-scm.com/book/en/v2/Getting-Started-Git-Basics</a></p></li>
+</ul>
+
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Collaborating with Git</h2></hgroup><article  id="collaborating-with-git">
 
 </article></slide><slide class=''><hgroup><h2>Git Servers</h2></hgroup><article  id="git-servers">
+
+<p>There are two options available</p>
+
+<ul>
+<li>gitlab.afsc.noaa.gov</li>
+<li>github.com</li>
+</ul>
+
+<p>AFSC GitLab</p>
+
+<ul>
+<li>Web: <a href='https://gitlab.afsc.noaa.gov' title=''>https://gitlab.afsc.noaa.gov</a> / <a href='https://161.55.120.151' title=''>https://161.55.120.151</a></li>
+<li>Git+ssh: <a href='ssh://git@gitlab.afsc.noaa.gov:2222/&lt;username&gt;/&lt;project&gt;.git' title=''>ssh://git@gitlab.afsc.noaa.gov:2222/&lt;username&gt;/&lt;project&gt;.git</a></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>AFSC GitLab</h2></hgroup><article  id="afsc-gitlab">
+
+<ul>
+<li>LDAP user accounts and authentication (NOAA only)</li>
+<li>Unlimited private or internal repositories</li>
+<li>Public repositories are also an option</li>
+<li>Available from the internet (VPN not required)</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Pushing and Pulling</h2></hgroup><article  id="pushing-and-pulling">
 
