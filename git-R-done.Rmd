@@ -96,15 +96,6 @@ Git Demonstration
 
     http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
 
-## Using Git with R and Science
-
-Scientific analysis and R doesn't follow a typical software development cycle ... so don't force it to. Find a solution and workflow that works for you. Learn from others
-
-- start with a single user and a single branch
-- commit often and tell a story
-- tags to mark milestones
-
-advice: learn git by using it with a **meaningful** project
 
 ## Using Git with R and Science
 
